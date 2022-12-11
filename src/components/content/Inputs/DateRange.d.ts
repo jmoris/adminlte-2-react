@@ -7,7 +7,7 @@ import { InputWrapperProps } from './InputWrapper';
 import './Date.scss';
 import { Types } from '../../PropTypes';
 import { DateType, SharedDateProps } from './InputProps';
-declare type Focused = 'startDate' | 'endDate';
+type Focused = 'startDate' | 'endDate';
 interface DateRangeProps extends SharedDateProps, InputWrapperProps {
     dateType: Types;
     startDate: DateType;

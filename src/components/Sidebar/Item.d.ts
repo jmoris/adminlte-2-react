@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { Colors, Types } from '../PropTypes';
-declare type ItemComponent = React.FC<ItemProps>;
+type ItemComponent = React.FC<ItemProps>;
 interface ItemLabel {
     small: boolean;
     color: Colors;

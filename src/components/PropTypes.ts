@@ -3,7 +3,7 @@ export type Types = 'default' | 'info' | 'danger' | 'warning' | 'success' | 'pri
 export type Sizes = 'xs' | 'sm' | 'md' | 'lg';
 export type FormTypes = 'warning' | 'success' | 'error';
 export type Themes = 'black-light' | 'black' | 'blue' | 'blue-light' | 'green' | 'green-light' |
-'purple' | 'purple-light' | 'red' | 'red-light' | 'yellow' | 'yellow-light';
+'purple' | 'purple-light' | 'red' | 'red-light' | 'yellow' | 'yellow-light' | 'soluciontotal';
 
 type TypeDesc = {
   type: string,

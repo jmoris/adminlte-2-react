@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-declare const ValueShape: PropTypes.Requireable<string | number | object>;
-declare const DateValueShape: PropTypes.Requireable<string | import("moment").Moment>;
-declare const OptionShape: PropTypes.Requireable<string | number | PropTypes.InferProps<{
-    value: PropTypes.Validator<string | number | object>;
-    text: PropTypes.Requireable<string | number>;
+declare const ValueShape: PropTypes.Requireable<NonNullable<string | number | object | null | undefined>>;
+declare const DateValueShape: PropTypes.Requireable<NonNullable<string | import("moment").Moment | null | undefined>>;
+declare const OptionShape: PropTypes.Requireable<NonNullable<NonNullable<string | number | null | undefined> | PropTypes.InferProps<{
+    value: PropTypes.Validator<NonNullable<NonNullable<string | number | object | null | undefined>>>;
+    text: PropTypes.Requireable<NonNullable<string | number | null | undefined>>;
     disabled: PropTypes.Requireable<boolean>;
     checked: PropTypes.Requireable<boolean>;
-}>>;
-declare const ListOfValueShape: PropTypes.Requireable<(string | number | PropTypes.InferProps<{
-    value: PropTypes.Validator<string | number | object>;
-    text: PropTypes.Requireable<string | number>;
+}> | null | undefined>>;
+declare const ListOfValueShape: PropTypes.Requireable<(NonNullable<NonNullable<string | number | null | undefined> | PropTypes.InferProps<{
+    value: PropTypes.Validator<NonNullable<NonNullable<string | number | object | null | undefined>>>;
+    text: PropTypes.Requireable<NonNullable<string | number | null | undefined>>;
     disabled: PropTypes.Requireable<boolean>;
     checked: PropTypes.Requireable<boolean>;
-}> | null | undefined)[]>;
-declare const ArrayOfValueShape: PropTypes.Requireable<(string | number | object | null | undefined)[]>;
+}> | null | undefined> | null | undefined)[]>;
+declare const ArrayOfValueShape: PropTypes.Requireable<(NonNullable<string | number | object | null | undefined> | null | undefined)[]>;
 declare const SharedInputProps: {
     name: PropTypes.Requireable<string>;
     id: PropTypes.Requireable<string>;

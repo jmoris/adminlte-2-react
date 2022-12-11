@@ -50,8 +50,8 @@ import ButtonToolbar from './content/ButtonToolbar';
 import Label from './content/Label';
 import Pagination from './content/Pagination';
 import SmartTable from './content/SmartTable';
-declare type Node = React.ReactNode;
-declare type Props = {
+type Node = React.ReactNode;
+type Props = {
     children: ReactElement | ReactElement[];
     title: string | string[];
     titleShort: string | string[];
@@ -60,6 +60,7 @@ declare type Props = {
     sidebar: Node;
     footer: Node;
     homeTo: string;
+    fixed: boolean;
     searchbarFilter: boolean;
 };
 declare class AdminLTE extends Component<Props, {}> {
@@ -72,16 +73,17 @@ declare class AdminLTE extends Component<Props, {}> {
         footer: null;
         sidebar: undefined;
         homeTo: string;
+        fixed: boolean;
         searchbarFilter: boolean;
     };
     componentDidMount(): void;
     render(): JSX.Element;
 }
 export default AdminLTE;
-export declare type Colors = Colors_;
-export declare type Types = Types_;
-export declare type Sizes = Sizes_;
-export declare type FormTypes = FormTypes_;
-export declare type Themes = Themes_;
+export type Colors = Colors_;
+export type Types = Types_;
+export type Sizes = Sizes_;
+export type FormTypes = FormTypes_;
+export type Themes = Themes_;
 export { Content, Sidebar, Footer, ControlSidebar, Navbar, Row, Col, Infobox, Box, DescriptionBlock, ProgressGroup, Button, DataTable, Tabs, TabContent, Description, DescriptionItem, ButtonGroup, Margin, SparklineBox, Chatbox, Memberbox, SimpleTable, Sparkbar, NavListItem, NavList, ProductList, ProductListItem, Infobox2, LoginCore, AsyncComponent, Alert, Callout, ProgressBar, Divider, Inputs, Label, Badge, Calendar, LoadingSpinner, BoxPane, ButtonToolbar, Pagination, SmartTable, };
 //# sourceMappingURL=AdminLTE.d.ts.map

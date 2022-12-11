@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import TabContent from './TabContent';
-declare type TabContentType = typeof TabContent;
+type TabContentType = typeof TabContent;
 interface TabsProps {
     activeKey?: string;
     defaultActiveKey?: string;

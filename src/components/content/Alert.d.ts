@@ -1,7 +1,7 @@
 import { Component, ReactNode } from 'react';
 import { Types } from '../PropTypes';
 import './Alert.css';
-declare type Props = {
+type Props = {
     id?: string;
     closable?: boolean;
     onDismiss?: Function;
@@ -10,7 +10,7 @@ declare type Props = {
     title?: string;
     children?: ReactNode;
 };
-declare type State = {
+type State = {
     closed: boolean;
 };
 declare class Alert extends Component<Props, State> {

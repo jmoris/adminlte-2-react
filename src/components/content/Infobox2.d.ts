@@ -13,7 +13,7 @@ interface Infobox2Props {
     onFooterClick?: MouseEventHandler<HTMLAnchorElement>;
     to?: string;
 }
-declare type Infobox2Component = React.FC<Infobox2Props>;
+type Infobox2Component = React.FC<Infobox2Props>;
 declare const Infobox2: Infobox2Component;
 export default Infobox2;
 //# sourceMappingURL=Infobox2.d.ts.map

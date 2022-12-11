@@ -3,10 +3,10 @@ import 'datatables.net-bs/css/dataTables.bootstrap.css';
 import 'datatables.net-select-bs/css/select.bootstrap.css';
 import './DataTable.css';
 import { ColumnType, DataType, SelectedRowType } from './TableProps';
-declare type OnClickEvents = {
+type OnClickEvents = {
     [key: string]: Function;
 };
-declare type OrderType = {
+type OrderType = {
     direction: 'asc' | 'desc';
     column?: string;
     index?: number;

@@ -87,6 +87,7 @@ type Props = {
   sidebar: Node;
   footer: Node;
   homeTo: string;
+  fixed: boolean;
   searchbarFilter: boolean;
 };
 
@@ -101,13 +102,14 @@ class AdminLTE extends Component<Props, {}> {
     footer: null,
     sidebar: undefined,
     homeTo: '/',
+    fixed: false,
     searchbarFilter: false,
   };
 
   componentDidMount() {
-    const { theme = 'blue', browserTitle } = this.props;
+    const { theme = 'blue', browserTitle, fixed = false} = this.props;
     if (theme) {
-      document.body.className += ` skin-${theme} sidebar-mini`;
+      document.body.className += ` skin-${theme} sidebar-mini ` + ((fixed)?'fixed':'');
     }
     if (browserTitle) document.title = browserTitle;
     switch (theme) {
@@ -146,6 +148,9 @@ class AdminLTE extends Component<Props, {}> {
         break;
       case 'yellow-light':
         require('../adminlte/css/skins/skin-yellow-light.css');
+        break;
+      case 'soluciontotal':
+        require('../adminlte/css/skins/skin-st.css');
         break;
       default:
         require('../adminlte/css/skins/skin-blue.css');

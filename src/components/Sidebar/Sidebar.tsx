@@ -101,7 +101,7 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
     }
     return (
       <aside className="main-sidebar">
-        <section className="sidebar">
+        <section className="sidebar scrollable">
           <ul className="sidebar-menu" data-widget="tree" ref={(c) => { this.widgetReference = c; }}>
             {localChildren}
           </ul>

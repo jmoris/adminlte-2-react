@@ -88,7 +88,7 @@ declare class SmartTable extends Component<SmartTableProps, SmartTableState> {
     onFilterColumnChanged: (filterColumn: any, searchPlaceholder: any) => void;
     onOrderChanged: (column: string, direction: SmartTableHeaderOrderDirection) => void;
     onFilter: () => void;
-    onRowSelect: (data?: DataType | undefined, rowIdx?: number | undefined) => void;
+    onRowSelect: (data?: DataType, rowIdx?: number) => void;
     onRowDeselect: (data: DataType, rowIdx: number) => void;
     onPageChange: (page: number) => void;
     setFilterValueAndFilter: (event: any) => void;
