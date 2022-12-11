@@ -1,5 +1,5 @@
 {
-  "name": "adminlte-2-react",
+  "name": "simplepos-adminlte2-react",
   "version": "3.0.1",
   "description": "AdminLTE 2.x.x. template ported to React",
   "main": "build/index.js",
@@ -26,8 +26,8 @@
     "icheck"
   ],
   "author": {
-    "name": "Nikolaus Sperat",
-    "email": "niko@sper.at"
+    "name": "Jesus Moris",
+    "email": "jesus@soluciontotal.cl"
   },
   "license": "MIT",
   "repository": {
